@@ -1,43 +1,69 @@
-Friends Gallery - Projeto Django + Angular
-Este é um projeto que combina o framework Django (utilizando Python 3.10) no lado do servidor e o framework Angular (versão 12) no lado do cliente para criar uma aplicação web dinâmica e robusta.
+# Projeto Angular 12 com Django e Python 3.10
 
-Configuração do Ambiente
-Certifique-se de ter o Python 3.10 instalado. Recomenda-se o uso de um ambiente virtual para isolar as dependências do projeto. Você pode criar e ativar um ambiente virtual da seguinte maneira:
+Este é um projeto que combina Angular 12 para o frontend e Django com Python 3.10 para o backend. A estrutura do projeto inclui uma pasta chamada `back` para os arquivos do projeto Django e uma pasta chamada `front` para os arquivos do projeto Angular.
 
-bash
-Copy code
-# Crie um ambiente virtual
-python3.10 -m venv venv
+## Pré-requisitos
 
-# Ative o ambiente virtual
-source venv/bin/activate   # No Linux/Mac
-venv\Scripts\activate      # No Windows
-Agora, instale as dependências do Django:
+Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes de iniciar:
 
-bash
-Copy code
-pip install -r back/requirements.txt
-Certifique-se também de ter o Node.js e o npm instalados para o desenvolvimento Angular. Você pode instalá-los aqui.
+- [Node.js](https://nodejs.org/) (v12 ou superior)
+- [Angular CLI](https://angular.io/cli) (v12 ou superior)
+- [Python](https://www.python.org/) (v3.10)
+- [Django](https://www.djangoproject.com/) (v3.2)
 
-Em seguida, vá para o diretório front e instale as dependências do Angular:
+## Configuração do Backend (Django)
 
-bash
-Copy code
-cd front
-npm install
-Executando o Projeto
-Certifique-se de estar no diretório principal do projeto. Execute o servidor Django com o seguinte comando:
+1. Navegue até o diretório `back`:
 
-bash
-Copy code
-python back/manage.py runserver
-Isso iniciará o servidor Django na porta padrão (localhost:8000).
+   ```bash
+   cd back
+   ```
 
-Agora, abra uma nova janela do terminal e vá para o diretório front. Inicie o servidor de desenvolvimento do Angular com o seguinte comando:
+2. Crie e ative um ambiente virtual (recomendado, mas opcional):
 
-bash
-Copy code
-ng serve
-Isso iniciará o servidor de desenvolvimento Angular na porta padrão (localhost:4200).
+   ```bash
+   python3.10 -m venv venv
+   source venv/bin/activate
+   ```
 
-Acesse a aplicação em seu navegador visitando http://localhost:4200.
+3. Instale as dependências do Django:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Execute as migrações do banco de dados:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+5. Inicie o servidor Django:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+O backend Django estará acessível em [http://localhost:8000/](http://localhost:8000/).
+
+## Configuração do Frontend (Angular)
+
+1. Navegue até o diretório `front`:
+
+   ```bash
+   cd front
+   ```
+
+2. Instale as dependências do Angular:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento do Angular:
+
+   ```bash
+   ng serve
+   ```
+
+O frontend Angular estará acessível em [http://localhost:4200/](http://localhost:4200/).
