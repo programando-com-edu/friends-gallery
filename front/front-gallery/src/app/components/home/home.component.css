@@ -1,0 +1,128 @@
+.banner-home-container{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    margin-top: 80px;
+    height: 700px;
+}
+
+img.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 1400px;
+}
+
+.top-right-text{
+   text-align: end;
+   padding-right: 100px;
+   padding-bottom: 160px ;
+
+}
+
+.center-text{
+    text-align: center;
+}
+
+.bottom-left-text{
+   padding-left: 100px;
+   padding-top: 160px ;
+}
+
+.photo-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.post{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.post-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-img{
+    border: 2px solid #FAB300;
+    width: 50%;
+    height: 600px;
+}
+
+.square-1{
+
+    border-top-left-radius: 250px ;
+    border-top-right-radius: 250px ;
+}
+.square-2{
+    border-top-right-radius: 250px ;
+    border-bottom-left-radius: 250px ;
+}
+.square-3{
+    border-radius:20px;
+}
+.square-4{
+    border-bottom-left-radius: 250px ;
+    border-bottom-right-radius: 250px ;
+}
+.square-5{
+    border-bottom-right-radius: 250px ;
+}
+
+
+.comments-section{
+    width: 50%;
+    height: 600px;
+}
+
+.comments{
+    height: 70%;
+    margin-left: 4rem;
+}
+
+.title, .comment{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    height: 20%;
+}
+
+.comment{
+    margin-left: 4rem;
+}
+
+.post-user{
+    margin-right: 10px;
+}
+
+.comment-input {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  
+  .comment-input- {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .send-comment {
+    width: 80px;
+    height: 40px;
+    margin: 9px;
+    z-index: 2;
+  }
+  

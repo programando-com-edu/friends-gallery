@@ -1,0 +1,21 @@
+<div class="main-container">
+
+    <app-banner></app-banner>
+    <div class="center-form">
+        <form class="account" action="">
+            <h6 class="">Sign Up to upload and comment your friend’s wedding</h6>
+            <div class="account-form">
+                <label for="email">Email</label>
+                <input id="email" name="email" [(ngModel)]="account.email" type="text">
+            </div>
+            <div class="account-form">
+                <label for="password">Password</label>
+                <input id="password" name="password" [(ngModel)]="account.password" type="password">
+            </div>
+            <div class="form-button-div">
+                <button type="button" (click)="navigateToSignup()" class="login-buttons">Create Account</button>
+                <button (click)="performLogin()" class="login-buttons">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

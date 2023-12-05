@@ -1,0 +1,28 @@
+img {
+    width: 80%;
+    height: 600;
+    margin-left: 40px;
+  }
+
+.top-left-text {
+    position: relative;
+    top: 70px;
+    left:-40px;
+  }
+
+.bottom-right-text {
+    position: relative;
+    bottom: 80px;
+    right: -350px;
+  }
+
+.banner-accounts-container {
+    height: 800px;
+    margin: 0 120px;
+}
+p {
+    font-family: literata;
+    font-size: 96px;
+    padding: 0;
+    margin: 0;
+}

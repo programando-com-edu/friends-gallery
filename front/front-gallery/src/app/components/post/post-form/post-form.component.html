@@ -1,0 +1,45 @@
+<div class="center">
+    <form class="post-form" [formGroup]="uploadForm" (ngSubmit)="createPost()">
+      <div class="post-form-top">
+        <div (click)="selectFile()" class="upload-file">
+          <p>Upload your best photo here!</p>
+          <input
+            type="file"
+            id="fileInput"
+            style="display: none"
+            (change)="onFileSelected($event)"
+            accept="image/*"
+          />
+        </div>
+        <div class="text-inputs">
+          <h2>Insert a title for your photo...</h2>
+          <input
+            formControlName="title"
+            class="text"
+            type="text"
+            placeholder="Insert a title"
+          />
+          <h2>Insert comment with your feelings...</h2>
+          <textarea
+            formControlName="post_commentary"
+            type=""
+            placeholder="Comment here"
+          ></textarea>
+        </div>
+      </div>
+      <div class="frame-selection">
+        <h2>Now, select the best frame for the picture!</h2>
+        <div class="boxes-div">
+          <button
+            type="button"
+            *ngFor="let square of squares"
+            (click)="choseFrame(square)"
+            [class]="square.class"
+          ></button>
+        </div>
+      </div>
+      <div class="center-button">
+        <button type="submit" [disabled]="uploadForm.invalid">Send for Check!</button>
+      </div>
+    </form>
+  </div>  

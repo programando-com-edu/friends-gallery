@@ -1,0 +1,37 @@
+.post-img{
+    border: 2px solid #FAB300;
+    height: 500px;
+}
+.square-1{
+    border-top-left-radius: 250px ;
+    border-top-right-radius: 250px ;
+}
+.square-2{
+    border-top-right-radius: 250px ;
+    border-bottom-left-radius: 250px ;
+}
+.square-3{
+    border-radius:20px;
+}
+.square-4{
+    border-bottom-left-radius: 250px ;
+    border-bottom-right-radius: 250px ;
+}
+.square-5{
+    border-bottom-right-radius: 250px ;
+}
+
+.div-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+button{
+    border-radius: 12px; 
+}
+.tittle-commet{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+.form-button-div{
+    width: auto;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}

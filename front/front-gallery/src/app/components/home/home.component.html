@@ -1,0 +1,33 @@
+<div class="banner-home-container">
+    <div class="top-right-text"><h1>CAROLINE</h1></div>
+    <div class="center-text"><h1>&</h1></div>
+    <div class="bottom-left-text"><h1>DANIEL</h1></div>
+    <img class="banner" src="assets/home-banner.png" alt="">
+</div>
+<div class="photo-button">
+    <button (click)="navigateToPosts()" >
+        {{ hasApproval ? 'Approve Photos' : 'Upload a New Photo' }}
+    </button>
+</div>
+
+<div class="post-div">
+    <div *ngFor="let post of posts" id="post_{{post.id}}" class="post">
+        <img class="post-img square-{{post.image_frame}}" src="{{post.image}}" alt="">
+        <div class="comments-section">
+            <div class="title">
+                <h3 class="post-user">{{post.user_data.name}}:</h3>
+                <h2 style="margin-left:20px">{{post.title}}</h2>
+            </div>
+            <div  class="comments">
+                <div *ngFor="let commentary of post.commentaries" class="comment">
+                    <h5 class="post-user">{{commentary.user_data.name}}:</h5>
+                    <p>{{commentary.commentary}}</p>
+                </div>
+            </div>
+            <div id="post_id_{{post.id}}" class="comment-input">
+                <input class="comment-input-" type="text" [(ngModel)]="commentText">
+                <button (click)="sendCommentary(commentText, post.id)" class="send-comment">Send</button>
+            </div>
+        </div>
+    </div>
+</div>

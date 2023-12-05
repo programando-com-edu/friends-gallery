@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    margin: 0px 40px;
+    border-bottom: 2px solid black;
+}
+
+nav a {
+    font-family: literata;
+    font-weight: medium;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 20px;
+    color: #5D6265;
+}
+
+nav a.active {
+    color: #000;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
